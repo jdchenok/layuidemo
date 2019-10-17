@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按钮</title>
+    <link rel="stylesheet" href="resouces/layui/css/layui.css">
+</head>
+<body>
+    <button class="layui-btn layui-btn-primary">增加</button>
+    <script src="resouces/layui/layui.js"></script>
+    <script type="text/javascript">
+        layui.use(["jquery"],function () {
+            var $ = layui.jquery;
+            $(".layui-btn").click(function () {
+                alert($(this).html())
+            })
+        })
+    </script>
+</body>
+</html>
